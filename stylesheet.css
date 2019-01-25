@@ -1,17 +1,19 @@
 body{
     background-color: #9C9C9C;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 30px;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(-90deg,#9C9C9C,#545454)
 }
 
 
 .wrapper { 
+    margin: 50px;
     display: grid; 
     grid-template-columns: 1fr 2fr 1fr;
     grid-column-gap:1em;
     grid-auto-rows: minmax(100px, auto);
     grid-row-gap:1em;
+    font-family: 'Roboto', sans-serif;
 
 } 
 
@@ -19,7 +21,7 @@ body{
 .box1{
     grid-column:1;
     grid-row:1/6;
-    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
     border-radius: 15px;
     background-color: #545454;
     justify-content: space-between;
@@ -28,7 +30,7 @@ body{
 .box2{
     grid-column:2;
     grid-row:1/3;
-    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
     border-radius: 15px;
     background-color: #545454;
 
@@ -37,7 +39,7 @@ body{
 .box3{
     grid-column: 2;
     grid-row:3/6;
-    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
     border-radius: 15px;
     background-color: #545454;
 }
@@ -45,7 +47,7 @@ body{
 .box4{
     grid-column: 3;
     grid-row:1/2;
-    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
     border-radius: 15px;
     background-color: #545454;
 }
@@ -53,7 +55,7 @@ body{
 .box5{
     grid-column: 3;
     grid-row:2/4;
-    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
     border-radius: 15px;
     background-color: #545454;
 }
@@ -61,7 +63,7 @@ body{
 .box6{
     grid-column: 3;
     grid-row:4/6;
-    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
     border-radius: 15px;
     background-color: #545454;
 }
@@ -70,7 +72,7 @@ body{
 .foto1{
     width: 100px;
     height:140px;
-    border:2px solid;
+    border:1px solid black;
     margin: 10px; 
     margin-bottom: 0;
     border-radius: 5%;
@@ -79,21 +81,23 @@ body{
 }
 
 .profiel{
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: 10px;
+    margin-right :10px; 
 }
 
 .contact{
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 10px;
 
 }
 
 .titel-box2{
     padding: 0px;
-    margin: -5px 0 0 0;
+    margin: 0px;
     text-align: center;
     
+
 }
 
 .titel-box3{
@@ -127,4 +131,17 @@ i, i:visited{
 .social{
     display:flex;
     flex-direction: row;
+    justify-content: space-around;
+    margin-left: -15px;
 }
+
+ul li {
+padding: 4px 0px;   
+list-style: square url(favicon.ico);
+ }
+
+ i:hover{
+font-size: 60px;
+color: white;
+ }
+
